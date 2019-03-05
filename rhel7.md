@@ -20,18 +20,21 @@
 
 
 2.  ##### SSSD Domain Status Information
-        ```
+        
         # sssctl domain-list
         # sssctl domain-status <domain>
-        ```
+        
+
 3. ##### SSSD Configuration Check
-        ```
+   
+        
         # sssctl config-check
-        ```
+        
 
 4. ##### SSSD Logging
     
     * truncating SSSD logs can now be done with sssctl
+  
         ```
         # sssctl logs-remove
         ```
