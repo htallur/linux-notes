@@ -1,0 +1,10 @@
+---
+# awscli must be installed on the ansible control node (pip install awscli)
+# awscli must be configured to authenticate with aws for the user running the playbook.
+ config:
+ transport: ssh
+  ssh:
+- hosts: localhost
+  tasks:
+  - name: Execute awscli command to change the IAM role 
+    command: aws ec2 associate-iam-instance-profile --instance-id YourInstanceId --iam-instance-profile Name=YourNewRole-Instance-Profile
